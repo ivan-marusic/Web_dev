@@ -398,3 +398,86 @@ form div button {
 .myClass ul {
   color: #ad2121;
 } 
+/* Mobile-first adjustments */
+@media (max-width: 768px) {
+  #cover #cover-text {
+    top: 40px;
+    left: 20px;
+    right: 20px;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  header h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .trip-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #trip-holder {
+    padding: 20px;
+  }
+
+  .trip-description,
+  .trip-price,
+  .trip-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  table, tbody, tr {
+    display: block;
+    width: 100%;
+  }
+
+  tr.table-header,
+  tr.table-body-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container ul {
+    flex-direction: column;
+  }
+
+  .container ul li {
+    margin: 10px 0;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+
+  .popup.active {
+    width: 90%;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #cover #cover-text {
+    top: 60px;
+    left: 50px;
+    right: 50px;
+  }
+
+  .trip-image {
+    width: 80%;
+  }
+
+  #trip-holder {
+    padding: 40px;
+  }
+}
